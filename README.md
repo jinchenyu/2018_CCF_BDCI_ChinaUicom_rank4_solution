@@ -9,4 +9,8 @@
 - [F](https://github.com/37Feng)
 
 
-![830_166对比.png](https://github.com/jinchenyu/2018_CCF_BDCI_ChinaUicom_rank4_solution/blob/master/images-folde/confusion_matrix.jpg)
+![confusion_matrix.jpg](https://github.com/jinchenyu/2018_CCF_BDCI_ChinaUicom_rank4_solution/blob/master/images-folde/confusion_matrix.jpg)
+
+
+![各套餐micro_F1.jpg](https://github.com/jinchenyu/2018_CCF_BDCI_ChinaUicom_rank4_solution/blob/master/images-folde/各套餐micro_F1.jpg)
+
