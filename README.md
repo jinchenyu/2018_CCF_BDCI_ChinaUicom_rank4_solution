@@ -7,3 +7,6 @@
 - [NeuronBlack_](https://github.com/neuronblack)
 - [木有服务器咋挖矿呢](https://github.com/oh-it-is)
 - [F](https://github.com/37Feng)
+
+
+![830_166对比.png](2018_CCF_BDCI_ChinaUicom_rank4_solution/images-folde/830_166对比.png)
