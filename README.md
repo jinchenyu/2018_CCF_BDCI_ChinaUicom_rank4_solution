@@ -32,7 +32,7 @@
 
 根据混淆矩阵可以看到，在830只有10k多个样本时，有接近一半，被错误的分类到尾数为166的套餐（以下简称166）中，而166对830分错较少
 
-![套餐830与166对比](2018_CCF_BDCI_ChinaUicom_rank4_solution/images-folde/830_166对比.png)
+![套餐830与166对比](https://github.com/jinchenyu/2018_CCF_BDCI_ChinaUicom_rank4_solution/blob/master/images-folde/830_166对比.png)
 
 再对830和166两类进行EDA，可以看到无论是流量，还是话费，两套餐都呈现出高度一致
 
