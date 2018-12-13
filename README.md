@@ -38,10 +38,26 @@
 ## 初赛数据在复赛阶段的使用
 复赛数据和初赛对比发现套餐出现的比例出现了较大的变化
 
-![enter image description here](https://github.com/jinchenyu/2018_CCF_BDCI_ChinaUicom_rank4_solution/blob/master/images-folde/初赛复赛比例.jpg)
+![初赛复赛分布比例](https://github.com/jinchenyu/2018_CCF_BDCI_ChinaUicom_rank4_solution/blob/master/images-folde/初赛复赛比例.jpg)
 
 对于数据分布差异较大，最好的办法就是嫁接，然而嫁接姿势不对，全员尝试，均无法上分，迫于无奈，只能选择拼接。
 
 但是由于分布不同，如果贸然直接拼接，势必会影响统计特征分布，所以在此根据复赛数据来做统计特征，再将统计特征merge到全量数据中
 
+## 连续数据的离散处理
+以用户消费金额为例
+
+![本月用户消费](https://github.com/jinchenyu/2018_CCF_BDCI_ChinaUicom_rank4_solution/blob/master/images-folde/本月用户消费value_counts.jpg)
+
+对total_fee统计发现大量消费集中在56、76、106、136等，而对于正常的数值型数据，数据分布通常比较均匀，不会出现在集中在这几个消费段
+
+![本月消费金额76](https://github.com/jinchenyu/2018_CCF_BDCI_ChinaUicom_rank4_solution/blob/master/images-folde/本月消费金额76value_counts.jpg)
+
+![本月消费金额106](https://github.com/jinchenyu/2018_CCF_BDCI_ChinaUicom_rank4_solution/blob/master/images-folde/本月消费金额106value_counts.jpg)
+
+而在这些消费段，一个值基本区分出89950166,89950167这些套餐，推断每月出账金额是该用户套餐消费的关键。
+
+由此也可以将消费金额看作离散变量处理。
+
+联想到1_total_fee至4_total_fee上，将4个月消费金额拼接，使用CountVectorizer做词频统计。为防止重复数据导致过拟合训练集，过滤词频低于20
 
